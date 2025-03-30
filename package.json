@@ -1,11 +1,34 @@
 {
 	"name": "@codeeditorland/azurecache",
 	"displayName": "Azure Cache",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Manage and browse through data in your Azure Caches.",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureCache#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureCache/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandAzureCache.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./dist/extension.js",
 	"scripts": {
 		"clean": "rimraf out/ dist/",
 		"compile": "rimraf out/ && tsc -p ./tsconfig-test.json",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"publish": "vsce publish --baseImagesUrl https://github.com/microsoft/vscode-azurecache/raw/main/"
 	},
 	"contributes": {
@@ -181,6 +204,7 @@
 		"uuid": "11.1.0"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/glob": "8.1.0",
 		"@types/ioredis": "5.0.0",
 		"@types/node": "22.13.14",
@@ -196,6 +220,9 @@
 	"extensionDependencies": [
 		"ms-vscode.azure-account"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"icon": "resources/azure-cache.png",
 	"preview": true,
 	"aiKey": "AIF-00000000-0000-0000-0000-000000000000"

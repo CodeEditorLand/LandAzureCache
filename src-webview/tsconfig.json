@@ -1,9 +1,22 @@
 {
-	"extends": "../tsconfig-base.json",
 	"compilerOptions": {
+		"baseUrl": "./",
 		"jsx": "react",
-		"lib": ["dom", "es6"],
+		"lib": [
+			"dom",
+			"es6"
+		],
+		"outDir": "Target",
+		"rootDir": "src",
 		"strict": true
 	},
-	"references": [{ "path": "../src-shared" }]
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		"src"
+	],
+	"references": [
+		{
+			"path": "../src-shared"
+		}
+	]
 }
