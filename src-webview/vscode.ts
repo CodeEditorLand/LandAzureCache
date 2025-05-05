@@ -7,5 +7,4 @@
  * We must assume that it exists for us to use in the webview JS.
  */
 declare const acquireVsCodeApi: () => any;
-
 export const vscode = acquireVsCodeApi();

@@ -1,19 +1,10 @@
 {
-	"compilerOptions": {
-		"baseUrl": "./",
-		"composite": true,
-		"lib": [
-			"es6"
-		],
-		"outDir": "Target",
-		"rootDir": "src",
-		"strict": true
-	},
-	"extends": "@playform/build/tsconfig",
-	"include": [
-		"src",
-		"src",
-		"src",
-		"src"
-	]
+    "extends": "../tsconfig-base.json",
+    "compilerOptions": {
+        "lib": [
+            "es6"
+        ],
+        "composite": true,
+        "strict": true
+    }
 }
