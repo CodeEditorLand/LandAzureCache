@@ -248,7 +248,7 @@
         "webpack-cli": "^3.3.12"
     },
     "dependencies": {
-        "@babel/runtime": "^7.11.0",
+        "@babel/runtime": "^7.27.1",
         "@fluentui/react": "^7.124.1",
         "azure-arm-rediscache": "^3.0.0",
         "ioredis": "^4.17.3",
